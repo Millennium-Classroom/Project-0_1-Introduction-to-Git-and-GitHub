@@ -196,6 +196,8 @@ Remember to regularly pull code to ensure you have the correct version and you a
 
 Try to avoid changing a lot of files at once in branches. This could lead to lengthy and troublesome merge conflicts. 
 
+Lastly, please write good and descriptive commit messages :)
+
 ## ***Authors***
 - [Team 3647, Edward Sun](https://github.com/EdwardoSunny)
 
