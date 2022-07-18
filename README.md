@@ -1,6 +1,8 @@
 # Project 0_1: Introduction to Git and GitHub
 This guide will walk you through what is git and GitHub and also how to use these tools
 
+**Note:** The [Git Book](https://git-scm.com/book/en/v2) is the best source for the most accurate and correct information. If this guide differs from the book, assume the book is correct (unless it is a matter of style). It is suggested that you refer to chapters 1-3 of the book for a complete introduction to git.
+
 If you want to go above and beyond this guide, follow:
 
 - [git-scm guide](https://git-scm.com/docs)
