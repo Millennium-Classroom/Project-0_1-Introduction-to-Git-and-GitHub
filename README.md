@@ -12,7 +12,8 @@ If you want to go above and beyond this guide, follow:
 Git is a version control tool used for tracking file versions, changes, etc. You can use git to revert to previous changes, work on different versions of a file, compare files, etc. It is a program that you download and at the basic level has no user interface and is used from the command line. 
 
 ## Installing Git
-Use this [link](https://git-scm.com/downloads) to download git. Note this will install the program only, it will not come with a graphical interface
+- For Windows use this [link](https://git-scm.com/download/win) to download git. Note this will only install `git` the program, it will not come with a graphical interface (e.g. GitHub Desktop).
+- For Mac just type `git` in the terminal, and if git is not installed you will be prompted to install git. You can also install git from homebrew if you have it.
 
 ## Git Basic Concepts
 Think of Git as a file cabinet manager. You can ask git to take pictures of your work, git will then put these pictures in its file cabinet. Along with this picture, it will store data about when the picture was taken, where it was taken, etc.
