@@ -4,6 +4,7 @@ This guide will walk you through what is git and GitHub and also how to use thes
 If you want to go above and beyond this guide, follow:
 
 - [git-scm guide](https://git-scm.com/docs)
+- [GitHub guide](https://docs.github.com/en)
 
 ## What is Git?
 <img src="images\git.png" alt="drawing" width="400"/>
@@ -23,88 +24,91 @@ To start tracking your work, you need to create a ***Git Repository***. A Reposi
 <img src="images\gitdemo.png" alt="drawing" width="400"/>
 
 ## Basic Git Commands
-```ls```
+
+`ls`
 
 This command is called "list". It will list all the content of the current folder (also called directory) you are in
 
-```cd```
+`cd`
 
 This command is called "change directory". It will change the directory you are currently in to whatever you follow it up with.
 
-- e.g. ```cd Downloads```
+- e.g. `cd Downloads`
 
 ### Git Status
-```git status```
+`git status`
 
 This will give you the status of your current git repository. It will tell you whether there have been changes, whether files have been staged, committed, etc.
 
 ### Git Init
-```git init```
+`git init`
 
 This will initialize the current folder you are in to a git repository and now you can start using git commands. 
 
 ### Git Stage
-```git add .```
+`git add .`
 
 Think of staging a change as putting your work on a table/stage ready to get its snapshot taken. At this stage, the changes have not been committed yet. 
 
-The ```.``` parameter will stage all changes you have made. If you want to only stage the changes in one file, you can add the file's name after ```git add``` to specify that. 
+The `.` parameter will stage all changes you have made. If you want to only stage the changes in one file, you can add the file's name after `git add` to specify that. 
 
 ### Git Commit
-```git commit -m "insert commit message here"```
+`git commit -m "insert commit message here"`
 
 This command will only work if there is work that is staged. Running this will take a snap shot of your work AND store it inside of git's commit history. 
 
 Each commit will have a unique ID that you can refer to in order to identify it. The commit will also have its accompanying commit message along side it.
 
-```commit a770d5793bbbdb3b20a2a62d121ddebe2d06f215 (HEAD -> main, origin/main, origin/HEAD)
+```
+commit a770d5793bbbdb3b20a2a62d121ddebe2d06f215 (HEAD -> main, origin/main, origin/HEAD)
 Author: Millennium Falcons <falcons3647@gmail.com>
 Date:   Thu Apr 7 18:19:46 2022 -0700
-    practice day 1```
+    practice day 1
+```
 
-Here you can see the commit ID: ```a770d5793bbbdb3b20a2a62d121ddebe2d06f215```
+Here you can see the commit ID: `a770d5793bbbdb3b20a2a62d121ddebe2d06f215`
 
-The commit message: ```practice day 1```
+The commit message: `practice day 1`
 
-The commit date and time: ```Thu Apr 7 18:19:46 2022 -0700```
+The commit date and time: `Thu Apr 7 18:19:46 2022 -0700`
 
 and more...
 
 ### Git Log
-```git log```
+`git log`
 
-This command will show you a log of everything commit that the repository you are currently in has. If the list is too long, the terminal will adjust and update as you press the up and down arrow key. To get out of git log, press ```q``` 
+This command will show you a log of everything commit that the repository you are currently in has. If the list is too long, the terminal will adjust and update as you press the up and down arrow key. To get out of git log, press `q` 
 
-```git log --graph --oneline```
+`git log --graph --oneline`
 
 <img src="images\log.png" alt="drawing" width="400"/>
 
-```git log``` also includes options that you can activate. Some useful ones are the ```--graph``` and the ```--oneline``` options. This command will give you a visual display of your repositories history. You will be able to see commits, branches, etc.
+`git log` also includes options that you can activate. Some useful ones are the `--graph` and the `--oneline` options. This command will give you a visual display of your repositories history. You will be able to see commits, branches, etc.
 
 ### Git Branches
-```git branch branch-name```
+`git branch branch-name`
 
 This command will create a git branch. 
 
 <img src="images\branches.png" alt="drawing" width="400"/>
 
-Branches in git are like a separate time line of your work. It will branch off of the commit you were on when you made the branch and all the work will be separate from the ```Master``` (also called ```main```) branch it was on. This is useful because it allows multiple people work on the same testing different features. After testing, you can then merge the branch back to ```Master```. 
+Branches in git are like a separate time line of your work. It will branch off of the commit you were on when you made the branch and all the work will be separate from the `Master` (also called `main`) branch it was on. This is useful because it allows multiple people work on the same testing different features. After testing, you can then merge the branch back to `Master`. 
 
-```git branch```
+`git branch`
 
 This command will list all the branches the repo has. 
 
 ### Git Checkout
-```git checkout branch-name```
+`git checkout branch-name`
 
 Git checkout is a generic command used for checking out other entities in git. However, here you can use it to switch to a different branch. When you switch branches, the files in your folder will update to match the work in that branch. 
 
 ### Git Merge
-```git merge branch-name```
+`git merge branch-name`
 
-This command will merge the branch mentioned to the ```Master``` branch, integrated all the changes together. 
+This command will merge the branch mentioned to the `Master` branch, integrated all the changes together. 
 
-However, if both the ```Master``` and the new branch changed the same file in different ways, a ***Merge Conflict*** may occur. Please refer to [this](https://www.youtube.com/watch?v=xNVM5UxlFSA&ab_channel=Ihatetomatoes) on how to solve merge conflicts
+However, if both the `Master` and the new branch changed the same file in different ways, a ***Merge Conflict*** may occur. Please refer to [this](https://www.youtube.com/watch?v=xNVM5UxlFSA&ab_channel=Ihatetomatoes) on how to solve merge conflicts
 
 
 ## What is GitHub
@@ -146,12 +150,12 @@ Cloning means that you are copying and downloading a full version of the reposit
 This is different from downloading because downloading merely downloads the files only. 
 
 #### Pushing
-```git push```
+`git push`
 
 Pushing means that you are taking all of your local files, git history, etc. to a remote repository. Thus, you can only use this command if the repo on your computer is connected to a remote repo.
 
 #### Pulling
-```git pull```
+`git pull`
 
 Pulling means that you are grabbing files and git history from a remote repository (inverse of pushing). This will get you all the updated information on the repo if someone else has been working on the project.
 
@@ -165,10 +169,10 @@ Follow [this guide](https://www.digitalocean.com/community/tutorials/how-to-push
 
 Issues in GitHub allows you to manage your work and see what future tasks there are to be fixed and how your project can be improved. These issues have a specific issue number (#1). Issues can also have labels assigned to them. To create one, simple click ***new issue*** under issues (big green button).
 
-```fixes #1```
+`fixes #1`
 The above commit message will close issue #1
 
-```#1 is cool```
+`#1 is cool`
 The above commit message will mention issue #1 and it will show up in the issue discussion thread.
 
 [Read more about issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
@@ -177,13 +181,23 @@ The above commit message will mention issue #1 and it will show up in the issue 
 
 <img src="images\pull.png" alt="drawing" width="400"/>
 
-Knowing about branches, pull requests are basically a way to ask the administrators of the repo to merge your modified branch into ```Master```. 
+Knowing about branches, pull requests are basically a way to ask the administrators of the repo to merge your modified branch into `Master`. 
 
 To create a pull request, simply go to the ***pull request*** section of the GitHub repo. Then chose which branch you want to compare and merge to create your pull request.
 
-If there are no merge conflicts (changing the same content different ways on the two branches) the admin can accept the pull request and merge your code into ```Master```
+If there are no merge conflicts (changing the same content different ways on the two branches) the admin can accept the pull request and merge your code into `Master`
 
 [Read more about pull requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues)
+
+## ***Final Notes***
+Do not be conservative on git commits. Please commit any working changes you have. ***DO NOT*** make one commit for many changes. This will make reverting and debugging changes very hard since you cannot find where the code that broke the project could be hiding. 
+
+Remember to regularly pull code to ensure you have the correct version and you aren't super far behind.
+
+Try to avoid changing a lot of files at once in branches. This could lead to lengthy and troublesome merge conflicts. 
+
+## ***Authors***
+- [Team 3647, Edward Sun](https://github.com/EdwardoSunny)
 
 
 
