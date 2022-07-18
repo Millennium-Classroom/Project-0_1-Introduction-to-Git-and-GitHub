@@ -7,7 +7,7 @@ If you want to go above and beyond this guide, follow:
 - [GitHub guide](https://docs.github.com/en)
 
 ## What is Git?
-<img src="images\git.png" alt="drawing" width="400"/>
+<img src="images\git.png" alt="drawing" width="200"/>
 
 Git is a version control tool used for tracking file versions, changes, etc. You can use git to revert to previous changes, work on different versions of a file, compare files, etc. It is a program that you download and at the basic level has no user interface and is used from the command line. 
 
@@ -113,7 +113,7 @@ However, if both the `Master` and the new branch changed the same file in differ
 
 ## What is GitHub
 
-<img src="images\github.png" alt="drawing" width="400"/>
+<img src="images\github.png" alt="drawing" width="200"/>
 
 GitHub is basically a cloud service where you can upload the git repository on your own computer. 
 
@@ -179,7 +179,7 @@ The above commit message will mention issue #1 and it will show up in the issue 
 
 #### Pull Requests
 
-<img src="images\pull.png" alt="drawing" width="400"/>
+<img src="images\pull.png" alt="drawing" width="200"/>
 
 Knowing about branches, pull requests are basically a way to ask the administrators of the repo to merge your modified branch into `Master`. 
 
