@@ -23,6 +23,17 @@ To start tracking your work, you need to create a ***Git Repository***. A Reposi
 
 <img src="images\gitdemo.png" alt="drawing" width="400"/>
 
+## Setting Up Git
+For the first time after installing git, you will need to configure your git information. 
+
+`git config --global user.name "Mike Wazowski"`
+
+This command will set your user name on your git system.
+
+`git config --global user.email mikewazowski@example.com`
+
+This command will set the email which your local git will reference. 
+
 ## Basic Git Commands
 
 `ls`
@@ -50,12 +61,30 @@ This will initialize the current folder you are in to a git repository and now y
 
 Think of staging a change as putting your work on a table/stage ready to get its snapshot taken. At this stage, the changes have not been committed yet. 
 
-The `.` parameter will stage all changes you have made. If you want to only stage the changes in one file, you can add the file's name after `git add` to specify that. 
+The `.` parameter will stage all changes you have made in the current folder. Alternatively, you can use the `*` parameter to stage ALL changes you have made. If you want to only stage the changes in one file, you can add the file's name after `git add` to specify that. 
+
+### Git Unstage and Discard
+`git restore file-name`
+
+This will discard the changes in the specified file. 
+
+`git restore --staged file-name`
+
+This will unstage the specified file.
+
+### Git Untrack
+`git rm file-name`
+
+This command will do the opposite of git add. It will untrack these files. You can use the same parameters as git add for this command (`*` and `.`).
 
 ### Git Commit
 `git commit -m "insert commit message here"`
 
 This command will only work if there is work that is staged. Running this will take a snap shot of your work AND store it inside of git's commit history. 
+
+`git commit -a -m "insert commit message here"`
+
+adding the `-a` parameter allows you to stage and commit in one command. 
 
 Each commit will have a unique ID that you can refer to in order to identify it. The commit will also have its accompanying commit message along side it.
 
@@ -73,6 +102,11 @@ The commit message: `practice day 1`
 The commit date and time: `Thu Apr 7 18:19:46 2022 -0700`
 
 and more...
+
+`git commit --amend`
+
+This will allow you to amend your commit and edit your commit history. You can change commited files and your commit messages with this command. 
+
 
 ### Git Log
 `git log`
@@ -154,10 +188,15 @@ This is different from downloading because downloading merely downloads the file
 
 Pushing means that you are taking all of your local files, git history, etc. to a remote repository. Thus, you can only use this command if the repo on your computer is connected to a remote repo.
 
+#### Fetching
+`git fetch`
+
+Fetching will grab files and git histry from a remote repository. This will get you all the updated information on the repo if someone else has been working on the project. However, this will not merge these changes into your repo.
+
 #### Pulling
 `git pull`
 
-Pulling means that you are grabbing files and git history from a remote repository (inverse of pushing). This will get you all the updated information on the repo if someone else has been working on the project.
+Pulling combines fetching and merging. Essentially grabs the change and integrates them into your local repo.
 
 ## Creating and Pushing to a Remote Repo
 Follow [this guide](https://www.digitalocean.com/community/tutorials/how-to-push-an-existing-project-to-github) to learn how to create and push code with the git terminal.
